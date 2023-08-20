@@ -1,7 +1,8 @@
 import { Box, Button, Typography } from "@mui/material";
 import * as React from "react";
 import { createTheme } from "@mui/material/styles";
-import SearchBar from "./SearchBar";
+import {Link } from "react-router-dom";
+
 
 const theme = createTheme({
   palette: {
@@ -14,15 +15,9 @@ const theme = createTheme({
   },
 });
 
-const arr: string []= [
-'2','a','b','c'
-];
-
-
-const aa = [{title:"tagac", date: "a", points: ["a"], tags:["a","c"]}, {title:"tagab", date:"b", points:["a"], tags:["a","b"]}]
-
-
 function LandingPage() {
+
+
   return (
     <>
       <Box
@@ -36,7 +31,7 @@ function LandingPage() {
           alignItems: "center",
         }}
       >
-        <SearchBar dataList={aa} tagList={arr}></SearchBar>
+
         <Box
           sx={{
             width: "40vw",
@@ -56,6 +51,7 @@ function LandingPage() {
             and working and coding and doing code and cooking. sorry graphic
             design is not my passion
           </Typography>
+          <Link to="/ResumeTemplate">
           <Button
             variant="contained"
             sx={{
@@ -74,6 +70,7 @@ function LandingPage() {
           >
             Call to action button!
           </Button>
+          </Link>
         </Box>
         <Box sx={{}}>
           <img src="src\assets\resume-icon.png" width="300"></img>

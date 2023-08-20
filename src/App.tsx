@@ -1,12 +1,16 @@
 import "./App.css";
-import Experience from "./components/Experience";
+import ResumeTemplate from "./components/ResumeTemplate";
 import LandingPage from "./components/LandingPage";
-import SkillButtons from "./components/SkillButtons";
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <LandingPage />
+      <Routes> 
+      <Route path='/' element={<LandingPage/>}></Route>
+      <Route path='/ResumeTemplate' element ={<ResumeTemplate/>}></Route>
+    </Routes>
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import PrimaryAppSearchBar from "./PrimaryAppSearchBar";
+import SearchBar from "./SearchBar";
 
 const useStyles = makeStyles({
   root: {
@@ -8,6 +9,7 @@ const useStyles = makeStyles({
     top: 0,
     width: "100vw",
     backgroundColor: "#B66981",
+    zIndex: "9000",
   },
   sideNav: {
     display: "flex",
@@ -25,6 +27,16 @@ const useStyles = makeStyles({
   },
 });
 
+
+const arr: string []= [
+  '2','a','b','c'
+  ];
+  
+  
+  const aa = [{title:"tagac", date: "a", points: ["a"], tags:["a","c"]}, {title:"tagab", date:"b", points:["a"], tags:["a","b"]}]
+  
+  
+
 function ResumeTemplate() {
   const classes = useStyles();
   return (
@@ -33,7 +45,9 @@ function ResumeTemplate() {
         <PrimaryAppSearchBar />
       </Box>
       <Box sx={{ display: "flex", flexDirection: "row" }}>
-        <Box className={classes.sideNav}></Box>
+        <Box className={classes.sideNav}>
+        <SearchBar dataList={aa} tagList={arr}></SearchBar>
+        </Box>
         <Box className={classes.resume}></Box>
       </Box>
     </>

@@ -8,8 +8,8 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import FirstPageIcon from "@mui/icons-material/FirstPage";
-import ContactPageIcon from "@mui/icons-material/ContactPage";
+// import FirstPageIcon from "@mui/icons-material/FirstPage";
+// import ContactPageIcon from "@mui/icons-material/ContactPage";
 import Button from "@mui/material/Button";
 
 const Search = styled("div")(({ theme }) => ({
@@ -133,7 +133,7 @@ export default function PrimarySearchAppBar() {
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <FirstPageIcon />
+            {/* <FirstPageIcon /> */}
           </IconButton>
           <Typography
             variant="h6"
@@ -145,7 +145,7 @@ export default function PrimarySearchAppBar() {
           </Typography>
           <Search>
             <SearchIconWrapper>
-              <ContactPageIcon />
+              {/* <ContactPageIcon /> */}
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Your Resume Title..."

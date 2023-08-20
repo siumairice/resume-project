@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import PrimaryAppSearchBar from "./PrimaryAppSearchBar";
+import NewSkill from "./NewSkill";
 
 const useStyles = makeStyles({
   root: {
@@ -33,7 +34,10 @@ function ResumeTemplate() {
         <PrimaryAppSearchBar />
       </Box>
       <Box sx={{ display: "flex", flexDirection: "row" }}>
-        <Box className={classes.sideNav}></Box>
+        <Box className={classes.sideNav}>
+          <Box sx={{ height: 64 }}></Box>
+          <NewSkill></NewSkill>
+        </Box>
         <Box className={classes.resume}></Box>
       </Box>
     </>

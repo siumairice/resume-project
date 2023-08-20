@@ -14,13 +14,12 @@ const theme = createTheme({
   },
 });
 
-const arr: string []= [
-'2','a','b','c'
+const arr: string[] = ["2", "a", "b", "c"];
+
+const aa = [
+  { title: "tagac", date: "a", points: ["a"], tags: ["a", "c"] },
+  { title: "tagab", date: "b", points: ["a"], tags: ["a", "b"] },
 ];
-
-
-const aa = [{title:"tagac", date: "a", points: ["a"], tags:["a","c"]}, {title:"tagab", date:"b", points:["a"], tags:["a","b"]}]
-
 
 function LandingPage() {
   return (

@@ -14,20 +14,4 @@ function App() {
   );
 }
 
-/*
-function App() {
-  return (
-    <>
-      <Project
-        title="jkfda"
-        location="waterloo"
-        languages={["javascript", "css", "gdgsahdh"]}
-        description={["wrote stuff", "did a lot of work"]}
-        tags={["hmmm", "ggggg"]}
-      />
-    </>
-  );
-}
-*/
-
 export default App;

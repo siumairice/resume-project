@@ -6,7 +6,7 @@ interface Props {
   title: string;
   location: string;
   description: string[];
-  tags: string[];
+  tags?: string[];
 }
 
 const theme = createTheme({
@@ -43,7 +43,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Experience = ({ title, location, description, tags }: Props) => {
+const Experience = ({ title, location, description, tags = [] }: Props) => {
   const classes = useStyles();
   return (
     <>
